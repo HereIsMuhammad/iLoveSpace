@@ -1,4 +1,4 @@
-# Open Source Space Data APIs [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/awesomelistsio/awesome)
+# Open Source Space Data APIs 
 
 > A curated list of open source APIs, tools, and resources for accessing and analyzing space-related data. This list covers everything from satellite imagery to planetary science, making it ideal for developers, researchers, and space enthusiasts.
 
