@@ -7,10 +7,10 @@ focused on **space, universe, astronomy, and cosmology**.
 All links here are free to explore and use for learning, research, and projects.
 
 ## Contents
-- [Open Access Journals](journals.md)
-- [Research Papers & Preprints](research-papers.md)
-- [Astronomical Data Archives](data-archives.md)
-- [Scholarly Indexes & Search Engines](scholarly-indexes.md)
+- [Open Access Journals](#open-access-space-journals)
+- [Research Papers & Preprints](#research-papers--preprints)
+- [Astronomical Data Archives](#space-data-archives)
+- [Scholarly Indexes & Search Engines](#scholarly-indexes)
 
 ## Open Access Space Journals
 
