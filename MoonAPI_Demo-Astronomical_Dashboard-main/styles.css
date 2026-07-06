@@ -1,0 +1,483 @@
+body {
+    background-color: #1a1a2e;
+    color: #e6e6e6;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.dashboard-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #16213e;
+    border: 1px solid #1f4068;
+    color: #e6e6e6;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card h5 {
+    color: #4da8da;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #1f4068;
+    padding-bottom: 0.5rem;
+}
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+    margin: 10px 0;
+}
+
+.changes-card {
+    margin-bottom: 2rem;
+    border-top: 3px solid #4da8da;
+}
+
+.changes-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.changes-title small {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+#changesLog {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+#changesLog::-webkit-scrollbar {
+    width: 8px;
+}
+
+#changesLog::-webkit-scrollbar-track {
+    background: #1f4068;
+    border-radius: 4px;
+}
+
+#changesLog::-webkit-scrollbar-thumb {
+    background: #4da8da;
+    border-radius: 4px;
+}
+
+.change-entry {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #1f4068;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.change-entry.latest {
+    background-color: #2a5a8f;
+    border-left-color: #4da8da;
+}
+
+.change-time {
+    font-weight: bold;
+    color: #4da8da;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.change-entry ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.change-entry li {
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.change-entry li:last-child {
+    border-bottom: none;
+}
+
+.table {
+    color: #e6e6e6;
+    margin-bottom: 0;
+}
+
+.table-dark {
+    background-color: #16213e;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #1f4068;
+}
+
+.table th {
+    border-color: #1f4068;
+    color: #4da8da;
+}
+
+.table td {
+    border-color: #1f4068;
+}
+
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.list-unstyled {
+    margin: 0;
+    padding: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.card strong {
+    color: #4da8da;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Data Explorer */
+.data-explorer {
+    position: fixed;
+    top: 0;
+    right: -40%;
+    width: 40%;
+    height: 100vh;
+    background-color: #16213e;
+    border-left: 1px solid #1f4068;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.data-explorer.active {
+    right: 0;
+}
+
+.data-explorer-header {
+    padding: 1rem;
+    border-bottom: 1px solid #1f4068;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data-explorer-content {
+    padding: 1rem;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.data-explorer pre {
+    background-color: #1a1a2e;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.data-explorer code {
+    color: #e6e6e6;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9rem;
+}
+
+.data-path {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #1f4068;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #4da8da;
+}
+
+.top-controls {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+}
+
+.me-2 {
+    margin-right: 0.5rem;
+}
+
+.github-icon.me-2 {
+    margin-right: 0.5rem;
+}
+
+.highlight {
+    background-color: rgba(77, 168, 218, 0.2);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+[data-path] {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+[data-path]:hover {
+    background-color: rgba(77, 168, 218, 0.1);
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin: -2px -4px;
+}
+
+/* Branding */
+.branding {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 999;
+    background-color: rgba(22, 33, 62, 0.9);
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #1f4068;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.branding:hover {
+    background-color: rgba(31, 64, 104, 0.95);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.branding-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.branding-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4da8da;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.branding-link:hover {
+    color: #fff;
+}
+
+.branding-logo {
+    height: 2rem;
+    width: auto;
+    filter: brightness(1.2);
+    transition: transform 0.3s ease;
+}
+
+.branding-link:hover .branding-logo {
+    transform: rotate(360deg);
+}
+
+.source-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4da8da;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+    padding-top: 0.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.source-link:hover {
+    color: #fff;
+}
+
+.github-icon {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.source-link:hover .github-icon {
+    opacity: 1;
+}
+
+/* Adjust main content when explorer is open */
+.container-fluid {
+    transition: padding-right 0.3s ease;
+}
+
+.container-fluid.explorer-active {
+    padding-right: calc(40% + 1.5rem);
+}
+
+/* API Key Modal */
+.modal-content {
+    background-color: #16213e;
+    border: 1px solid #1f4068;
+}
+
+.modal-header {
+    border-bottom: 1px solid #1f4068;
+}
+
+.modal-footer {
+    border-top: 1px solid #1f4068;
+}
+
+.modal-title {
+    color: #4da8da;
+}
+
+#apiKeyInput {
+    background-color: #1a1a2e;
+    border: 1px solid #1f4068;
+    color: #e6e6e6;
+    padding: 0.75rem;
+}
+
+#apiKeyInput:focus {
+    border-color: #4da8da;
+    box-shadow: 0 0 0 0.2rem rgba(77, 168, 218, 0.25);
+}
+
+/* API Key Status */
+.api-key-status {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(22, 33, 62, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #1f4068;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.api-key-status:hover {
+    background-color: rgba(31, 64, 104, 0.95);
+    transform: translateY(-2px);
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #666;
+    transition: background-color 0.3s ease;
+}
+
+.status-dot.valid {
+    background-color: #4caf50;
+}
+
+.status-dot.demo {
+    background-color: #ff9800;
+}
+
+.status-dot.invalid {
+    background-color: #f44336;
+}
+
+.key-preview {
+    font-family: monospace;
+    color: #4da8da;
+}
+
+.remove-key {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: none; /* Hidden by default */
+}
+
+.remove-key:hover {
+    color: #f44336;
+}
+
+/* Show remove button when key is valid */
+.api-key-status.has-valid-key .remove-key {
+    display: block;
+}
+
+/* API Key Modal */
+.modal-content {
+    background-color: #16213e;
+    border: 1px solid #1f4068;
+}
+
+.modal-header {
+    border-bottom: 1px solid #1f4068;
+}
+
+.btn-close {
+    background-color: transparent;
+    filter: invert(1) grayscale(100%) brightness(200%);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.btn-secondary {
+    background-color: #1f4068;
+    border-color: #1f4068;
+    color: #e6e6e6;
+}
+
+.btn-secondary:hover {
+    background-color: #2a5a8f;
+    border-color: #2a5a8f;
+} 
