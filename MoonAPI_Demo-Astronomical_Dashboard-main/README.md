@@ -85,10 +85,6 @@ The dashboard uses the following default settings:
 - Data points per hour: 12 (one every 5 minutes)
 - Default location: London (51.4768, -0.0004)
 
-## 📝 License
-
-This demo code is available under the MIT License. Feel free to use it as a starting point for your own projects.
-
 ## 🔗 Links
 
 - [Moon-API Website](https://moon-api.com)
@@ -111,11 +107,6 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 - For demo-specific issues, open a GitHub issue
 - For general queries, contact support@moon-api.com
 
-## 🌟 Acknowledgments
-
-- Thanks to all contributors and users of Moon-API
-- Built with [Chart.js](https://www.chartjs.org/) and [Bootstrap](https://getbootstrap.com/)
-
 ## 📊 Demo Data
 
 The demo mode uses simulated data that demonstrates:
@@ -125,8 +116,11 @@ The demo mode uses simulated data that demonstrates:
 - Viewing conditions
 - Equipment recommendations
 
-## License & Acknowledgments
-License: Distributed under the MIT License. Feel free to remix, build upon, or integrate this code within your space apps.
-Acknowledgments: Built using Chart.js and Bootstrap. Special thanks to the creators of Moon-API for open data availability.
+## 🌟 Acknowledgments
 
-Note: Demo data is for illustration purposes and may not reflect actual astronomical conditions.
+- Thanks to all contributors and users of Moon-API
+- Built with [Chart.js](https://www.chartjs.org/) and [Bootstrap](https://getbootstrap.com/)
+
+## 📝 License
+
+This demo code is available under the MIT License. Feel free to use it as a starting point for your own projects.
