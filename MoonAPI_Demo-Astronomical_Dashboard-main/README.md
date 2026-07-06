@@ -23,7 +23,7 @@ A real-time astronomical dashboard demonstrating the capabilities of [Moon-API.c
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/HairyDuck/MoonAPI_Demo-Astronomical_Dashboard.git
+    git clone https://github.com/iLoveSpace/MoonAPI_Demo-Astronomical_Dashboard.git
     ```
 
 2. Open `index.html` in your browser or serve via a web server.
@@ -93,7 +93,6 @@ This demo code is available under the MIT License. Feel free to use it as a star
 
 - [Moon-API Website](https://moon-api.com)
 - [API Documentation](https://moon-api.com/docs)
-- [RapidAPI Page](https://rapidapi.com/HairyDuck/api/moon-phase)
 
 ## 🤝 Contributing
 
@@ -125,5 +124,9 @@ The demo mode uses simulated data that demonstrates:
 - Distance variations
 - Viewing conditions
 - Equipment recommendations
+
+## License & Acknowledgments
+License: Distributed under the MIT License. Feel free to remix, build upon, or integrate this code within your space apps.
+Acknowledgments: Built using Chart.js and Bootstrap. Special thanks to the creators of Moon-API for open data availability.
 
 Note: Demo data is for illustration purposes and may not reflect actual astronomical conditions.
