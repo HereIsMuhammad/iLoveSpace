@@ -29,7 +29,7 @@ A real-time astronomical dashboard demonstrating the capabilities of [Moon-API.c
 2. Open `index.html` in your browser or serve via a web server.
 
 3. Either:
-   - Enter your Moon-API key (get one at [Moon-API.com or RapidAPI](https://rapidapi.com/MoonAPIcom/api/moon-phase))
+   - Enter your Moon-API key (get one at [Moon-API.com or RapidAPI])
    - Or click "View Demo with Sample Data" to try the dashboard
 
 ## 📊 Data Visualization
